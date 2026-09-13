@@ -11,7 +11,7 @@ Reads a fax list from a Google Sheet, sends your PDF to each number in turn, the
 records the result against that row. Because status is written back **as it goes**,
 an interrupted run leaves a clear record of exactly which numbers were reached.
 
-Sends are paced with human-like delays rather than fired back to back — bulk
+Sends are paced with human-like delays rather than fired back to back - bulk
 dispatch at machine speed tends to get throttled.
 
 ## Requirements
@@ -39,7 +39,7 @@ Edit the `CONFIGURATION` block at the top of `RingCentral_Fax_Auto.py`:
 | `DEFAULT_PDF_PATHS` | The PDF to attach |
 
 The simplest setup is to drop `service_account.json` and your PDF next to the
-script — the defaults already look there.
+script - the defaults already look there.
 
 ## Run
 
@@ -52,9 +52,9 @@ python RingCentral_Fax_Auto.py
 ## Notes on data
 
 This repository contains **no client or patient data**. `.gitignore` already excludes
-`.xlsx`, `.pdf` and `.csv` files, `service_account.json`, and chromedriver binaries —
+`.xlsx`, `.pdf` and `.csv` files, `service_account.json`, and chromedriver binaries -
 keep it that way if you fork this.
 
 ## License
 
-MIT © Muhammad Sharaz Khalid — see [LICENSE](LICENSE).
+MIT © Muhammad Sharaz Khalid - see [LICENSE](LICENSE).
